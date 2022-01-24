@@ -1,10 +1,10 @@
-   .----.
-   |C>_ |
- __|____|__
-|  ______--|
-`-/.::::.\-'a
- `--------'
-
+   .----.  
+   |C>_ |  
+ __|____|__  
+|  ______--|  
+`-/.::::.\-'a  
+ `--------'  
+  
 **img-csv**
 
 Requires [imagemagick](https://imagemagick.org/script/download.php).
