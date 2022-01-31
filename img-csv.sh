@@ -6,18 +6,15 @@ width=100
 while [ ! $# -eq 0 ]
 do
   case "$1" in
-    -f) file=$2
-            ;;
-    -w) width=$2
-            ;;
-    -h) height=$2
-            ;;
     *) file=$1
   esac
   shift
 done
 
-# echo 'file: '$file 'w: '$width 'h: '$height
+width=$(identify -format "%[fx:w]" $file)
+height=$(identify -format "%[fx:h]" $file)
+
+echo 'file: '$file 'w: '$width 'h: '$height
 
 for (( i = 0; i < $height; i++ )); do
 
